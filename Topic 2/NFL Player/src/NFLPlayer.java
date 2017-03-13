@@ -9,35 +9,19 @@ public class NFLPlayer {
 		quarterback TomBrady = new quarterback();
 		
 		System.out.println("----Season 2016: Quarterbacks----");
-
 		
-		System.out.println("Tom Brady");
-		System.out.println("New England Patriots");
-		System.out.println("Touchdown: 28");
-		System.out.println("Interceptions: 2");
-		System.out.println("Yards: 3,554");
 
-		
-		System.out.println("------------------------");
-		
-		quarterback MattRyan = new quarterback();
-		System.out.println("Matt Ryan");
-		System.out.println("Atlanta Falcons");
-		System.out.println("Touchdown: 38");
-		System.out.println("Interceptions: 7");
-		System.out.println("Yards: 4,944");
-
-		
-		System.out.println("------------------------");
-		
-		quarterback AaronRodgers = new quarterback();
-		System.out.println("Aaron Rodgers");
-		System.out.println("Green Bay Packers");
-		System.out.println("Touchdown: 40");
-		System.out.println("Interceptions: 7");
-		System.out.println("Yards: 4,428");
-
-
+		Scanner input = new Scanner(System.in);
+	    	System.out.print("Enter players's name: ");
+	    	String name = input.next();
+	        System.out.print("Enter team's name: ");
+	        double hours = input.nextDouble();
+	        System.out.print("Enter how many touchdown: ");
+	        double hourlyRate = input.nextDouble();
+	        System.out.print("Enter how many interceptions: ");
+	        double fedTax = input.nextDouble();
+	        System.out.print("Enter how many yards: ");
+	        double stateTax = input.nextDouble();
 
 
 	}
