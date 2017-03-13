@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
-public class Part2 {
+public class TimeConversion2 {
 	
 
 	    public static void main(String[] args)
