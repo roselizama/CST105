@@ -6,8 +6,6 @@ public class NFLPlayer {
 		// TODO Auto-generated method stub
 		Scanner myScan = new Scanner (System.in);
 		
-		quarterback TomBrady = new quarterback();
-		
 		System.out.println("----Season 2016: Quarterbacks----");
 		
 
