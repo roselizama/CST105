@@ -12,26 +12,18 @@ public class Part1 {
 	        int minute = -1;
 	        boolean exitProgram = false;
 	        boolean exitInputLoop = false;
-
-	        /* Accept input from the user
-	         * Arrange the input into two integers.
-	         * Check to see if the integers can be combined to form a valid time.
-	         * If it is not, throw exceptions.
-	         * If the time is valid, convert it and display it to the screen.
-	         * Ask the user whether they'd like to enter another input.
-	         */
 	        while(!exitProgram)
 	        {
 	            while(!exitInputLoop)
 	            {
-	                try // Gather input
+	                try
 	                {
 	                    exitInputLoop = true;
 	                    System.out.print("Enter time in 24-hour notation: ");
 	                    input = keyboard.nextLine();
 
-	                    if(input.length() > 3 && input.length() < 6) // Check for a valid length, so we don't continue with
-	                                                                 // "12:23:23" Or similarly long inputs.
+	                    if(input.length() > 3 && input.length() < 6) // Check for a valid length
+	                                                                 
 	                    {
 	                        splitString = input.split(":");
 	                        hour = Integer.parseInt(splitString[0]);
