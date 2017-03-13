@@ -2,26 +2,49 @@ import java.util.Scanner;
 
 public class NFLPlayer {
 
+	private static Scanner input;
+	private static double team;
+	private static double touchdown;
+	private static double intercep;
+	private static double yards;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner myScan = new Scanner (System.in);
-		
 		System.out.println("----Season 2016: Quarterbacks----");
 		
 
-		Scanner input = new Scanner(System.in);
+		input = new Scanner(System.in);
 	    	System.out.print("Enter players's name: ");
-	    	String name = input.next();
+	    	input.next();
 	        System.out.print("Enter team's name: ");
-	        double hours = input.nextDouble();
+	        setTeam(input.nextDouble());
 	        System.out.print("Enter how many touchdown: ");
-	        double hourlyRate = input.nextDouble();
+	        setTouchdown(input.nextDouble());
 	        System.out.print("Enter how many interceptions: ");
-	        double fedTax = input.nextDouble();
+	        setIntercep(input.nextDouble());
 	        System.out.print("Enter how many yards: ");
-	        double stateTax = input.nextDouble();
-
-
+	        setYards(input.nextDouble());
 	}
-
+	public static double getTeam() {
+		return team;
+	}
+	public static void setTeam(double team) {
+		NFLPlayer.team = team;
+	}
+	public static double getTouchdown() {
+		return touchdown;
+	}
+	public static void setTouchdown(double touchdown) {
+		NFLPlayer.touchdown = touchdown;
+	}
+	public static double getYards() {
+		return yards;
+	}
+	public static void setYards(double yards) {
+		NFLPlayer.yards = yards;
+	}
+	public static double getIntercep() {
+		return intercep;
+	}
+	public static void setIntercep(double intercep) {
+		NFLPlayer.intercep = intercep;
+	}
 }
